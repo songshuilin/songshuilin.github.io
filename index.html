@@ -1,0 +1,44 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>宝宝，生日快乐！</title>  
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>  
+</head>  
+<body>  
+
+<script language="javascript" type="text/javascript">
+function login() {
+    var username = document.getElementById("username").value;
+    var sex = document.getElementById("sex").value;
+
+
+    if(username=="宝宝" || username=="黄美林"){
+    
+        if(sex=="1125"||sex=="11月25日"){
+            window.location.href="second.html";
+         
+    }else{
+        alert("请输入1125或11月25日");
+        return
+    }
+        
+    }else{
+        alert("请输入宝宝或黄美林");
+        return
+    }
+
+}
+
+</script>
+
+
+    <div id="login">  
+        <h1>请输入姓名与生日</h1>  
+            <input type="text" id="username" required="required" placeholder="姓名" name="username"></input>  
+            <input type="text" id="sex" required="required" placeholder="生日" name="sex"></input>  
+            <button class="but"  onclick="login()">查看</button>  
+        
+    </div>  
+</body>  
+</html>  
